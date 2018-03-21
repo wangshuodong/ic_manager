@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangsd.web.dao.DepartmentMapper">
+  <resultMap id="BaseResultMap" type="com.wangsd.web.model.Department">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="deptName" jdbcType="VARCHAR" property="deptName" />
+    <result column="serviceId" jdbcType="TINYINT" property="serviceId" />
+    <result column="pid" jdbcType="TINYINT" property="pid" />
+    <result column="region" jdbcType="VARCHAR" property="region" />
+    <result column="contactPeople" jdbcType="VARCHAR" property="contactPeople" />
+    <result column="contactPhone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="contactAddress" jdbcType="VARCHAR" property="contactAddress" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangsd.web.dao.SysRoleMapper">
+  <resultMap id="BaseResultMap" type="com.wangsd.web.model.SysRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="roleName" jdbcType="VARCHAR" property="roleName" />
+    <result column="roleDesc" jdbcType="VARCHAR" property="roleDesc" />
+    <result column="roleType" jdbcType="INTEGER" property="roleType" />
+    <result column="roleState" jdbcType="BIT" property="roleState" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>
