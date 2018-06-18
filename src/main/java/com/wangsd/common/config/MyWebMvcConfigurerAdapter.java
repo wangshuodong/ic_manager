@@ -41,11 +41,13 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/toLogin").setViewName("login");
+        registry.addViewController("/index").setViewName("/index");
+        registry.addViewController("/toUpload").setViewName("upload");
         super.addViewControllers(registry);
     }
 
     /**
-     * 拦截器
+     * 重写addInterceptors方法，注册拦截器
      * @param registry
      */
     @Override
